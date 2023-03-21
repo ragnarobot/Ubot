@@ -32,7 +32,7 @@ async def handler(tele):
                         await tele.client.edit_permissions(
                             tele.chat_id, guser.id, view_messages=False
                         )
-                        await tele.reply(get_string("gban_1").format(guser.id, guser.id)
+                        await tele.reply(get_string("gban_7").format(guser.id, guser.id)
                         )
                     except BaseException:
                         return
@@ -94,7 +94,7 @@ async def gben(userbot):
 
     except BaseException:
         pass
-    return await dark.edit(get_string("gban_10").format(user.first_name, user.id, user.id, me.first_name)
+    return await dark.edit(get_string("gban_7").format(user.first_name, user.id, user.id, me.first_name)
     )
 
 
